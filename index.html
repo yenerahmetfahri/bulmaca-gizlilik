@@ -36,14 +36,16 @@
 
 <section id="tr" lang="tr">
 <h1>Gizlilik Politikası</h1>
-<p class="meta">Bulmaca: İngilizce Öğren · Son güncelleme: 24 Eylül 2026 (ABD bölümü eklendi)</p>
+<p class="meta">Bulmaca: İngilizce Öğren · Son güncelleme: 24 Eylül 2026</p>
 <div class="lang"><a href="#tr">Türkçe</a><a href="#en">English</a></div>
 
 <div class="box">
-<strong>Kısaca:</strong> Hesap açmanız gerekmez; adınızı, e-postanızı ya da konumunuzu istemeyiz. Oyun ilerlemeniz
-yalnızca telefonunuzda saklanır ve bize gönderilmez. Uygulama ücretsizdir ve reklamlarla desteklenir: reklamları
-Google AdMob gösterir, bunun için cihazınızdan bazı teknik veriler Google'a iletilir. Kişiselleştirilmiş reklam için
-izin istenir; vermeseniz de oyunu tam olarak kullanabilirsiniz.
+<strong>Kısaca:</strong> Uygulamayı ilk açtığınızda sizin için otomatik bir <strong>misafir hesabı</strong> oluşturulur;
+isterseniz Apple ya da Google hesabınızı bağlarsınız. Oyun ilerlemeniz, jetonlarınız ve kelime defteriniz hem
+telefonunuzda hem de hesabınıza bağlı olarak Google Firebase sunucularında (Almanya) saklanır; böylece telefon
+değiştirseniz de kaybolmaz. Uygulamayı geliştirmek için anonim kullanım istatistikleri ve çökme raporları toplarız.
+Uygulama reklamlarla ücretsizdir (Google AdMob). Hesabınızı ve bütün verilerinizi uygulama içinden istediğiniz an
+silebilirsiniz.
 </div>
 
 <h2>1. Veri sorumlusu</h2>
@@ -51,28 +53,48 @@ izin istenir; vermeseniz de oyunu tam olarak kullanabilirsiniz.
 Kişisel Verilerin Korunması Kanunu (“KVKK”) kapsamında veri sorumlusu <strong>Ahmet Fahri Yener</strong>’dir.
 İletişim: <a href="mailto:yenerahmetfahri@gmail.com">yenerahmetfahri@gmail.com</a></p>
 
-<h2>2. Bizim toplamadığımız veriler</h2>
+<h2>2. Hesabınız</h2>
 <ul>
-  <li>Uygulamada üyelik, giriş ya da hesap yoktur. Ad, e-posta, telefon numarası, fotoğraf, rehber gibi bilgiler istenmez.</li>
-  <li>Konum izni istenmez.</li>
-  <li>Uygulamanın kendi sunucusu yoktur; analiz ya da kullanım istatistiği aracı kullanılmaz.</li>
+  <li><strong>Misafir hesabı:</strong> İlk açılışta, kimliğinizi içermeyen rastgele bir kullanıcı kimliğiyle otomatik
+  oluşturulur. Ad, e-posta ya da telefon numarası istenmez.</li>
+  <li><strong>Apple ya da Google ile bağlanma (isteğe bağlı):</strong> Bağlarsanız sağlayıcının bize ilettiği
+  <strong>e-posta adresiniz</strong> ve (paylaşırsanız) <strong>adınız</strong> hesabınızla birlikte saklanır. Apple ile
+  girişte e-postanızı gizleyip Apple'ın yönlendirme adresini kullanabilirsiniz. Şifrenizi hiçbir zaman görmeyiz.</li>
+  <li>Giriş hizmeti Google Firebase Authentication ile sağlanır.</li>
 </ul>
 
-<h2>3. Yalnızca cihazınızda kalan veriler</h2>
-<p>Oyunun çalışması için aşağıdaki bilgiler telefonunuzdaki yerel bir veritabanında tutulur. <strong>Bize ya da
-başka birine gönderilmez</strong>, uygulamayı sildiğinizde silinir:</p>
+<h2>3. Hesabınızda saklanan oyun verileri</h2>
+<p>Oyunun çalışması ve cihazlarınız arasında taşınabilmesi için aşağıdakiler telefonunuzda ve hesabınıza bağlı olarak
+<strong>Google Firebase (Cloud Firestore) sunucularında, Frankfurt / Almanya</strong> bölgesinde saklanır:</p>
 <ul>
   <li>Bulmaca ilerlemesi (girdiğiniz harfler, süre, kullanılan yardımlar, tamamlanan bulmacalar)</li>
-  <li>Jeton, yıldız, günlük seri ve günlük reklam sayısı</li>
-  <li>Kelime defteri ve tekrar takvimi (hangi kelimeyi ne zaman tekrar edeceğiniz)</li>
-  <li>Ayarlar (ses, titreşim, seslendirme)</li>
+  <li>Jeton, günlük seri, günlük ödül ve reklam sayacı</li>
+  <li>Kelime defteri, “Zorlandıklarım” listesi ve tekrar takvimi</li>
+  <li>Aldığınız kampanya hediyelerinin kaydı (aynı hediyenin iki kez alınmaması için)</li>
 </ul>
-<p>Kelime seslendirme, cihazınızın yerleşik konuşma sentezi ile çevrimdışı yapılır; ses verisi dışarı gönderilmez.</p>
+<p>Ses, titreşim, seslendirme gibi <strong>ayarlar yalnızca telefonunuzda</strong> kalır. Kelime seslendirme cihazınızın
+yerleşik konuşma sentezi ile çevrimdışı yapılır; ses verisi dışarı gönderilmez. Konum izni istenmez; fotoğraf, rehber,
+mikrofon gibi verilere erişilmez.</p>
 
-<h2>4. Reklamlar (Google AdMob)</h2>
+<h2>4. Kullanım istatistikleri ve çökme raporları</h2>
+<ul>
+  <li><strong>Google Analytics for Firebase:</strong> Uygulamanın nasıl kullanıldığını anlamak ve geliştirmek için
+  uygulama içi olaylar (ör. bulmaca başladı / bitti, süre, kullanılan yardım sayısı, reklam izlendi, kelime tekrarı),
+  uygulama örnek kimliği, cihaz modeli, işletim sistemi, dil, ülke gibi bilgiler toplanır. Bu veriler reklam
+  kişiselleştirmesi için kullanılmaz; Google Analytics'in saklama ayarına göre (varsayılan 2 ay) saklanır.</li>
+  <li><strong>Firebase Crashlytics:</strong> Uygulama çökerse hata kaydı, cihaz modeli, işletim sistemi sürümü ve
+  kurulum kimliği gönderilir; yalnızca hataları bulup düzeltmek için kullanılır ve 90 gün saklanır.</li>
+</ul>
+
+<h2>5. Bildirimler</h2>
+<p>Bildirimlere izin verirseniz (uygulama önce sorar, sonra iOS'un izin penceresi çıkar) cihazınız için bir bildirim
+belirteci (Firebase Cloud Messaging) oluşturulur ve hediye ya da duyuru bildirimleri gönderilebilir. İzni istediğiniz
+an iOS <em>Ayarlar → Bulmaca → Bildirimler</em> bölümünden kapatabilirsiniz.</p>
+
+<h2>6. Reklamlar (Google AdMob)</h2>
 <p>Uygulama ücretsizdir ve Google LLC / Google Ireland Limited tarafından sunulan <strong>Google AdMob</strong> ile
-reklam gösterir: isteğe bağlı ödüllü reklamlar (jeton karşılığı) ve bazı bulmacaların arasında tam ekran reklamlar.
-Oyun sırasında reklam gösterilmez.</p>
+reklam gösterir: isteğe bağlı ödüllü reklamlar (jeton karşılığı) ve bazı bulmacaların bitişinde tam ekran reklamlar.
+Bulmaca çözerken reklam gösterilmez.</p>
 <h3>Google'a iletilebilecek veriler</h3>
 <ul>
   <li>Reklam kimliği (iOS'ta IDFA — <em>yalnızca izin verirseniz</em>; Android'de reklam kimliği)</li>
@@ -87,37 +109,53 @@ verdiyseniz — ilgi alanlarınıza uygun reklam seçmek.</p>
 <a href="https://policies.google.com/technologies/partner-sites">policies.google.com/technologies/partner-sites</a> ·
 Google Gizlilik Politikası: <a href="https://policies.google.com/privacy">policies.google.com/privacy</a></p>
 
-<h2>5. İzinleriniz ve tercihleriniz</h2>
+<h2>7. İzinleriniz ve tercihleriniz</h2>
 <ul>
-  <li><strong>iOS izleme izni:</strong> Uygulama ilk açılışta, reklam kimliğinizin kullanılması için Apple'ın izin
-  penceresini gösterir. İzin vermezseniz reklamlar kişiselleştirilmeden gösterilir. Kararınızı
+  <li><strong>iOS izleme izni:</strong> Ana ekrana ilk geldiğinizde, reklam kimliğinizin kullanılması için Apple'ın izin
+  penceresi gösterilir. İzin vermezseniz reklamlar kişiselleştirilmeden gösterilir. Kararınızı
   <em>Ayarlar → Gizlilik ve Güvenlik → İzleme</em> bölümünden istediğiniz zaman değiştirebilirsiniz.</li>
   <li><strong>Avrupa Ekonomik Alanı, İngiltere ve İsviçre:</strong> Bu bölgelerde Google'ın onay penceresi gösterilir;
   kabul edebilir, reddedebilir ya da seçenekleri tek tek yönetebilirsiniz. Kararınızı uygulamada
   <em>Ayarlar → Reklam gizlilik ayarları</em> bölümünden değiştirebilir ya da geri çekebilirsiniz.</li>
   <li><strong>Android:</strong> <em>Ayarlar → Gizlilik → Reklamlar</em> bölümünden reklam kimliğinizi sıfırlayabilir
   ya da silebilirsiniz.</li>
-  <li>Ödüllü reklam izlemek tamamen isteğe bağlıdır.</li>
+  <li>Ödüllü reklam izlemek, hesap bağlamak ve bildirimlere izin vermek tamamen isteğe bağlıdır.</li>
 </ul>
 
-<h2>6. Hukuki sebepler ve yurt dışına aktarım (KVKK)</h2>
-<p>Kişiselleştirilmiş reklam için reklam kimliğinizin işlenmesi <strong>açık rızanıza</strong> (KVKK m. 5/1)
-dayanır. Kişiselleştirilmemiş reklam gösterimi, ölçümü ve dolandırıcılığın önlenmesi, ücretsiz sunulan hizmetin
-sürdürülmesi ve güvenliği için <strong>meşru menfaat</strong> (KVKK m. 5/2-f) sebebine dayanır. Reklam hizmeti
-sağlayıcısı Google'ın sunucuları yurt dışında bulunduğundan veriler yurt dışına aktarılır; bu aktarım KVKK m. 9'da
-öngörülen güvencelere (standart sözleşmeler) ve gerektiğinde açık rızanıza dayanır.</p>
+<h2>8. Hukuki sebepler ve yurt dışına aktarım (KVKK)</h2>
+<ul>
+  <li>Hesap ve oyun verilerinin saklanıp cihazlar arasında taşınması, kullandığınız hizmetin sunulması için
+  <strong>sözleşmenin kurulması ve ifası</strong> (KVKK m. 5/2-c) sebebine dayanır.</li>
+  <li>Kullanım istatistikleri, çökme raporları, kişiselleştirilmemiş reklam gösterimi ve dolandırıcılığın önlenmesi,
+  hizmetin geliştirilmesi, güvenliği ve ücretsiz sürdürülmesi için <strong>meşru menfaat</strong> (KVKK m. 5/2-f)
+  sebebine dayanır.</li>
+  <li>Kişiselleştirilmiş reklam ve bildirimler <strong>açık rızanıza</strong> (KVKK m. 5/1) dayanır; rızanızı yukarıdaki
+  ayarlardan geri çekebilirsiniz.</li>
+</ul>
+<p>Hizmet sağlayıcımız Google'ın (Firebase, AdMob) sunucuları Türkiye dışındadır: oyun verileriniz Almanya'da (AB)
+saklanır; giriş, kullanım istatistikleri, çökme raporları, bildirim ve reklam hizmetleri Google'ın AB ve ABD'deki
+altyapısında işlenebilir. Bu aktarım KVKK m. 9'da öngörülen güvencelere (standart sözleşmeler) ve gerektiğinde açık
+rızanıza dayanır.</p>
 
-<h2>7. Haklarınız</h2>
+<h2>9. Saklama süresi ve hesabı silme</h2>
+<ul>
+  <li>Hesap ve oyun verileriniz hesabınız silinene kadar saklanır.</li>
+  <li><strong>Hesabınızı ve bütün verilerinizi uygulama içinden silebilirsiniz:</strong> <em>Ayarlar → Hesabım →
+  Hesabı ve bütün verileri sil</em>. Bu işlem buluttaki verilerinizi, hesabınızı ve telefonunuzdaki verileri kalıcı
+  olarak siler; Apple ile girdiyseniz Apple'daki uygulama yetkisi de geri alınır. Geri alınamaz.</li>
+  <li><strong>Misafir hesabı:</strong> Uygulamayı telefondan silmek buluttaki verilerinizi silmez. Silmek için önce
+  yukarıdaki düğmeyi kullanın ya da bize yazın.</li>
+  <li>Kullanım istatistikleri ve çökme raporları yukarıda belirtilen sürelerde; reklam verileri Google'ın saklama
+  politikalarına göre saklanır.</li>
+</ul>
+
+<h2>10. Haklarınız</h2>
 <p>KVKK m. 11 uyarınca; kişisel verilerinizin işlenip işlenmediğini öğrenme, bilgi talep etme, işleme amacını
 öğrenme, aktarıldığı kişileri bilme, düzeltilmesini, silinmesini ya da yok edilmesini isteme, otomatik analiz
 sonucu aleyhinize bir sonuca itiraz etme ve zarara uğramanız hâlinde tazmin talep etme haklarına sahipsiniz.
 AB'de bulunuyorsanız GDPR kapsamındaki erişim, düzeltme, silme, işlemeyi kısıtlama, itiraz ve veri taşınabilirliği
-haklarınız da geçerlidir.</p>
-<p>Uygulama sizi tanımlayan bir bilgi tutmadığından, cihazınızdaki verileri uygulamayı silerek tamamen
-kaldırabilirsiniz. Google'ın tuttuğu reklam verileri için yukarıdaki izin ayarlarını ve Google'ın araçlarını
-kullanabilirsiniz. Diğer talepleriniz için <a href="mailto:yenerahmetfahri@gmail.com">yenerahmetfahri@gmail.com</a>
+haklarınız da geçerlidir. Talepleriniz için <a href="mailto:yenerahmetfahri@gmail.com">yenerahmetfahri@gmail.com</a>
 adresine yazabilirsiniz; en geç 30 gün içinde yanıtlanır. Kişisel Verileri Koruma Kurulu'na şikâyet hakkınız saklıdır.</p>
-
 <h3>ABD eyaletlerinde yaşayanlar</h3>
 <p>Kaliforniya (CCPA/CPRA) ve benzer yasaları olan ABD eyaletlerinde, kişiselleştirilmiş reklam için Google'a
 veri iletilmesi yasal olarak kişisel bilginin “paylaşılması” ya da “satılması” sayılabilir. Bu paylaşımdan
@@ -125,15 +163,15 @@ vazgeçmek için uygulamada <em>Ayarlar → Reklam gizlilik ayarları</em> böl�
 ardından yalnızca kişiselleştirilmemiş reklam gösterilir. Bu haklarınızı kullandığınız için size farklı davranılmaz.
 Kişisel bilgileri para karşılığında satmıyoruz ve hassas kişisel bilgi toplamıyoruz.</p>
 
-<h2>8. Çocuklar</h2>
+<h2>11. Çocuklar</h2>
 <p>Uygulama 13 yaşın altındaki çocuklara yönelik değildir ve bu yaştaki çocuklardan bilerek kişisel veri
-toplanmaz. Çocuğunuzun uygulamayı kullandığını düşünüyorsanız bizimle iletişime geçin.</p>
+toplanmaz. Çocuğunuzun uygulamayı kullandığını düşünüyorsanız bizimle iletişime geçin; verileri sileriz.</p>
 
-<h2>9. Güvenlik ve saklama</h2>
-<p>Cihazınızdaki veriler uygulamanın kendi korumalı alanında saklanır ve uygulama silinene kadar kalır. Google'a
-iletilen veriler Google'ın saklama politikalarına tabidir.</p>
+<h2>12. Güvenlik</h2>
+<p>Verileriniz aktarım sırasında şifrelenir (HTTPS/TLS). Bulut veritabanında her kullanıcı yalnızca kendi verilerine
+erişebilir; bu erişim kuralları sunucu tarafında uygulanır.</p>
 
-<h2>10. Değişiklikler</h2>
+<h2>13. Değişiklikler</h2>
 <p>Bu politika güncellenirse yeni hâli bu sayfada, güncelleme tarihiyle birlikte yayınlanır.</p>
 </section>
 
@@ -144,37 +182,59 @@ iletilen veriler Google'ın saklama politikalarına tabidir.</p>
 <p class="meta">Bulmaca: İngilizce Öğren · Last updated: September 24, 2026</p>
 
 <div class="box">
-<strong>In short:</strong> No account is needed and we never ask for your name, email or location. Your game progress
-stays on your phone and is never sent to us. The app is free and supported by ads shown by Google AdMob, which
-receives some technical data from your device. Personalized ads are shown only with your permission; the game works
-fully either way.
+<strong>In short:</strong> When you first open the App, a <strong>guest account</strong> is created for you automatically;
+you can optionally link your Apple or Google account. Your game progress, coins and word notebook are stored on your
+phone and, tied to your account, on Google Firebase servers (Germany), so nothing is lost if you change phones. We collect
+anonymous usage statistics and crash reports to improve the App. The App is free and supported by ads (Google AdMob). You
+can delete your account and all your data from within the App at any time.
 </div>
 
 <h2>1. Controller</h2>
 <p>This policy applies to the <strong>Bulmaca: İngilizce Öğren</strong> mobile app (“App”). The data controller is
 <strong>Ahmet Fahri Yener</strong>. Contact: <a href="mailto:yenerahmetfahri@gmail.com">yenerahmetfahri@gmail.com</a></p>
 
-<h2>2. What we do not collect</h2>
+<h2>2. Your account</h2>
 <ul>
-  <li>There is no sign-up, login or account. We never ask for your name, email, phone number, photos or contacts.</li>
-  <li>The App does not request location permission.</li>
-  <li>The App has no server of its own and uses no analytics or usage-tracking tools.</li>
+  <li><strong>Guest account:</strong> created automatically on first launch with a random user ID that does not identify
+  you. No name, email or phone number is requested.</li>
+  <li><strong>Linking Apple or Google (optional):</strong> if you link, the <strong>email address</strong> and (if you
+  share it) the <strong>name</strong> provided by that service are stored with your account. With Sign in with Apple you
+  may hide your email and use Apple's relay address. We never see your password.</li>
+  <li>Sign-in is provided by Google Firebase Authentication.</li>
 </ul>
 
-<h2>3. Data that stays on your device</h2>
-<p>To run the game, the following is stored in a local database on your phone. It is <strong>never sent to us or
-anyone else</strong> and is deleted when you delete the App:</p>
+<h2>3. Game data stored with your account</h2>
+<p>To run the game and carry it across your devices, the following is stored on your phone and, tied to your account,
+on <strong>Google Firebase (Cloud Firestore) servers in Frankfurt, Germany</strong>:</p>
 <ul>
   <li>Puzzle progress (letters entered, time, hints used, completed puzzles)</li>
-  <li>Coins, stars, daily streak and daily ad count</li>
-  <li>Word notebook and review schedule</li>
-  <li>Settings (sound, haptics, pronunciation)</li>
+  <li>Coins, daily streak, daily reward and ad counter</li>
+  <li>Word notebook, “Zorlandıklarım” (words you struggled with) and review schedule</li>
+  <li>Records of gift campaigns you claimed (so a gift is not claimed twice)</li>
 </ul>
-<p>Word pronunciation uses your device's built-in text-to-speech offline; no audio leaves your device.</p>
+<p><strong>Settings</strong> such as sound, haptics and pronunciation <strong>stay on your phone</strong>. Pronunciation
+uses your device's built-in text-to-speech offline; no audio leaves your device. The App does not request location and
+does not access photos, contacts or the microphone.</p>
 
-<h2>4. Advertising (Google AdMob)</h2>
+<h2>4. Usage statistics and crash reports</h2>
+<ul>
+  <li><strong>Google Analytics for Firebase:</strong> to understand and improve how the App is used, we collect in-app
+  events (e.g. puzzle started / completed, time, number of hints, ad watched, word review), an app instance ID, device
+  model, OS, language and country. This data is not used for ad personalization and is kept according to Google
+  Analytics' retention setting (2 months by default).</li>
+  <li><strong>Firebase Crashlytics:</strong> if the App crashes, a crash log, device model, OS version and an installation
+  ID are sent, used only to find and fix bugs, and kept for 90 days.</li>
+</ul>
+
+<h2>5. Notifications</h2>
+<p>If you allow notifications (the App asks first, then iOS shows its prompt), a notification token (Firebase Cloud
+Messaging) is created for your device and gift or announcement notifications may be sent. You can turn them off anytime
+under iOS <em>Settings → Bulmaca → Notifications</em>.</p>
+
+<h2>6. Advertising (Google AdMob)</h2>
 <p>The App is free and shows ads through <strong>Google AdMob</strong> (Google LLC / Google Ireland Limited): optional
-rewarded ads (in exchange for coins) and full-screen ads between some puzzles. Ads are never shown during gameplay.</p>
+rewarded ads (in exchange for coins) and full-screen ads when some puzzles are finished. Ads are never shown while you
+solve a puzzle.</p>
 <h3>Data that may be shared with Google</h3>
 <ul>
   <li>Advertising identifier (IDFA on iOS — <em>only if you allow it</em>; Advertising ID on Android)</li>
@@ -189,48 +249,66 @@ selecting ads based on your interests.</p>
 <a href="https://policies.google.com/technologies/partner-sites">policies.google.com/technologies/partner-sites</a> ·
 Google Privacy Policy: <a href="https://policies.google.com/privacy">policies.google.com/privacy</a></p>
 
-<h2>5. Your choices</h2>
+<h2>7. Your choices</h2>
 <ul>
-  <li><strong>iOS tracking permission:</strong> On first launch the App shows Apple's prompt for use of your advertising
-  identifier. If you decline, ads are not personalized. You can change this anytime under
+  <li><strong>iOS tracking permission:</strong> when you first reach the home screen, Apple's prompt asks about use of
+  your advertising identifier. If you decline, ads are not personalized. You can change this anytime under
   <em>Settings → Privacy &amp; Security → Tracking</em>.</li>
   <li><strong>EEA, UK and Switzerland:</strong> Google's consent form is shown; you can accept, reject or manage options.
   You can change or withdraw consent anytime in the App under <em>Settings → Reklam gizlilik ayarları</em>
   (Ad privacy settings).</li>
   <li><strong>Android:</strong> reset or delete your Advertising ID under <em>Settings → Privacy → Ads</em>.</li>
-  <li>Watching rewarded ads is entirely optional.</li>
+  <li>Watching rewarded ads, linking an account and allowing notifications are entirely optional.</li>
 </ul>
 
-<h2>6. Legal bases and international transfers</h2>
-<p>Personalized advertising relies on your <strong>consent</strong>. Non-personalized ad delivery, measurement and
-fraud prevention rely on our <strong>legitimate interest</strong> in keeping the App free and secure. Google's servers
-are located outside Türkiye and the EEA; transfers rely on appropriate safeguards such as standard contractual
-clauses and, where required, your consent.</p>
+<h2>8. Legal bases and international transfers</h2>
+<ul>
+  <li>Storing your account and game data and syncing it across devices is necessary to <strong>provide the service
+  you use</strong> (contract).</li>
+  <li>Usage statistics, crash reports, non-personalized ads and fraud prevention rely on our <strong>legitimate
+  interest</strong> in improving, securing and keeping the App free.</li>
+  <li>Personalized advertising and notifications rely on your <strong>consent</strong>, which you can withdraw using the
+  settings above.</li>
+</ul>
+<p>Our service provider Google (Firebase, AdMob) operates servers outside Türkiye: your game data is stored in Germany
+(EU); sign-in, usage statistics, crash reports, notifications and advertising may be processed on Google's
+infrastructure in the EU and the US. Transfers rely on appropriate safeguards such as standard contractual clauses and,
+where required, your consent.</p>
 
-<h2>7. Your rights</h2>
+<h2>9. Retention and deleting your account</h2>
+<ul>
+  <li>Account and game data are kept until your account is deleted.</li>
+  <li><strong>You can delete your account and all your data in the App:</strong> <em>Settings → Hesabım (My account) →
+  Hesabı ve bütün verileri sil (Delete account and all data)</em>. This permanently deletes your cloud data, your account
+  and the data on your phone; if you used Sign in with Apple, the App's authorization with Apple is also revoked. This
+  cannot be undone.</li>
+  <li><strong>Guest accounts:</strong> deleting the App from your phone does not delete your cloud data. Use the button
+  above first, or email us.</li>
+  <li>Usage statistics and crash reports are kept for the periods above; advertising data according to Google's
+  retention policies.</li>
+</ul>
+
+<h2>10. Your rights</h2>
 <p>Depending on where you live (including under Turkish KVKK and the EU GDPR), you may have the right to access,
 correct, delete or restrict processing of your personal data, to object, to data portability, and to lodge a
-complaint with a supervisory authority. Because the App stores nothing that identifies you, deleting the App removes
-all data on your device. For ad data held by Google, use the choices above and Google's tools. For any other request,
-email <a href="mailto:yenerahmetfahri@gmail.com">yenerahmetfahri@gmail.com</a>; we reply within 30 days.</p>
-
+complaint with a supervisory authority. For any request, email
+<a href="mailto:yenerahmetfahri@gmail.com">yenerahmetfahri@gmail.com</a>; we reply within 30 days.</p>
 <h3>U.S. state privacy rights</h3>
 <p>Under California law (CCPA/CPRA) and similar laws in other U.S. states, sharing data with Google for personalized
 advertising may be considered a “sale” or “sharing” of personal information. To opt out, use
 <em>Settings → Reklam gizlilik ayarları</em> (Ad privacy settings) in the App; only non-personalized ads will be shown
-afterwards. You will not be
-discriminated against for exercising these rights. We do not sell personal information for money and do not collect
-sensitive personal information.</p>
+afterwards. You will not be discriminated against for exercising these rights. We do not sell personal information for
+money and do not collect sensitive personal information.</p>
 
-<h2>8. Children</h2>
+<h2>11. Children</h2>
 <p>The App is not directed to children under 13 and we do not knowingly collect personal data from them. If you
-believe your child is using the App, please contact us.</p>
+believe your child is using the App, please contact us and we will delete the data.</p>
 
-<h2>9. Security and retention</h2>
-<p>On-device data is kept in the App's sandboxed storage until the App is deleted. Data shared with Google is subject
-to Google's retention policies.</p>
+<h2>12. Security</h2>
+<p>Data is encrypted in transit (HTTPS/TLS). In the cloud database each user can access only their own data; these
+access rules are enforced on the server.</p>
 
-<h2>10. Changes</h2>
+<h2>13. Changes</h2>
 <p>If this policy changes, the new version will be published on this page with its update date.</p>
 </section>
 
