@@ -71,7 +71,17 @@ Kişisel Verilerin Korunması Kanunu (“KVKK”) kapsamında veri sorumlusu <st
   <li>Jeton, günlük seri, günlük ödül ve reklam sayacı</li>
   <li>Kelime defteri, “Zorlandıklarım” listesi ve tekrar takvimi</li>
   <li>Aldığınız kampanya hediyelerinin kaydı (aynı hediyenin iki kez alınmaması için)</li>
+  <li>Seçtiğiniz profil avatarı ve rumuz (kullanıcı adı), puanınız, kazandığınız rozetler için gereken sayılar ve
+  eklediğiniz arkadaşların listesi</li>
 </ul>
+
+<h3>Sıralama ve arkadaşlar: diğer oyuncuların gördükleri</h3>
+<p>Uygulamada puan sıralaması (haftalık ve tüm zamanlar) vardır. Bir bulmaca bitirdiğinizde <strong>rumuzunuz (belirlediyseniz),
+seçtiğiniz avatar ve puanlarınız</strong> sıralamada <strong>diğer oyunculara görünür</strong>. Rumuz belirlemediyseniz
+“İsimsiz sincap” olarak görünürsünüz. Adınız, e-posta adresiniz ya da Apple / Google hesap bilgileriniz
+<strong>hiçbir zaman</strong> diğer oyunculara gösterilmez. Rumuzunuzu bilen bir oyuncu sizi arkadaş olarak ekleyebilir;
+bu, yalnızca onun arkadaş sıralamasında görünmenizi sağlar. Rumuz herkeste farklıdır ve 15 günde bir değiştirilebilir;
+kişisel bilgi içeren bir rumuz seçmemenizi öneririz.</p>
 <p>Ses, titreşim, seslendirme gibi <strong>ayarlar yalnızca telefonunuzda</strong> kalır. Kelime seslendirme cihazınızın
 yerleşik konuşma sentezi ile çevrimdışı yapılır; ses verisi dışarı gönderilmez. Konum izni istenmez; fotoğraf, rehber,
 mikrofon gibi verilere erişilmez.</p>
@@ -88,8 +98,10 @@ mikrofon gibi verilere erişilmez.</p>
 
 <h2>5. Bildirimler</h2>
 <p>Bildirimlere izin verirseniz (uygulama önce sorar, sonra iOS'un izin penceresi çıkar) cihazınız için bir bildirim
-belirteci (Firebase Cloud Messaging) oluşturulur ve hediye ya da duyuru bildirimleri gönderilebilir. İzni istediğiniz
-an iOS <em>Ayarlar → Bulmaca → Bildirimler</em> bölümünden kapatabilirsiniz.</p>
+belirteci (Firebase Cloud Messaging) oluşturulur ve hediye ya da duyuru bildirimleri gönderilebilir. Ayrıca günün
+bulmacasını oynamadığınız akşamlar için <strong>telefonunuzda zamanlanan yerel bir hatırlatma</strong> kurulur; bunun
+için sunucuya veri gönderilmez. İzni istediğiniz an uygulamanın ayarlarından ya da telefonunuzun
+<em>Ayarlar → Bulmaca → Bildirimler</em> bölümünden kapatabilirsiniz.</p>
 
 <h2>6. Reklamlar (Google AdMob)</h2>
 <p>Uygulama ücretsizdir ve Google LLC / Google Ireland Limited tarafından sunulan <strong>Google AdMob</strong> ile
@@ -150,7 +162,8 @@ rızanıza dayanır.</p>
   <li>Hesap ve oyun verileriniz hesabınız silinene kadar saklanır.</li>
   <li><strong>Hesabınızı ve bütün verilerinizi uygulama içinden silebilirsiniz:</strong> <em>Ayarlar → Hesabım →
   Hesabı ve bütün verileri sil</em>. Bu işlem buluttaki verilerinizi, hesabınızı ve telefonunuzdaki verileri kalıcı
-  olarak siler; Apple ile girdiyseniz Apple'daki uygulama yetkisi de geri alınır. Geri alınamaz.</li>
+  olarak siler; rumuzunuz, sıralamadaki kaydınız ve arkadaş listeniz de silinir; Apple ile girdiyseniz Apple'daki
+  uygulama yetkisi de geri alınır. Geri alınamaz.</li>
   <li><strong>Misafir hesabı:</strong> Uygulamayı telefondan silmek buluttaki verilerinizi silmez. Silmek için önce
   yukarıdaki düğmeyi kullanın ya da bize yazın.</li>
   <li>Kullanım istatistikleri ve çökme raporları yukarıda belirtilen sürelerde; reklam verileri Google'ın saklama
@@ -219,7 +232,17 @@ on <strong>Google Firebase (Cloud Firestore) servers in Frankfurt, Germany</stro
   <li>Coins, daily streak, daily reward and ad counter</li>
   <li>Word notebook, “Zorlandıklarım” (words you struggled with) and review schedule</li>
   <li>Records of gift campaigns you claimed (so a gift is not claimed twice)</li>
+  <li>Your profile avatar and nickname (username), your points, the counts needed for badges, and the list of friends
+  you added</li>
 </ul>
+
+<h3>Leaderboards and friends: what other players see</h3>
+<p>The App has points leaderboards (weekly and all-time). When you finish a puzzle, <strong>your nickname (if you set one),
+your chosen avatar and your points</strong> are <strong>visible to other players</strong> on the leaderboard. Without a
+nickname you appear as “İsimsiz sincap” (anonymous squirrel). Your name, email address or Apple / Google account details
+are <strong>never</strong> shown to other players. A player who knows your nickname can add you as a friend; this only
+makes you appear on their friends leaderboard. Nicknames are unique and can be changed once every 15 days; please do not
+choose a nickname that contains personal information.</p>
 <p><strong>Settings</strong> such as sound, haptics and pronunciation <strong>stay on your phone</strong>. Pronunciation
 uses your device's built-in text-to-speech offline; no audio leaves your device. The App does not request location and
 does not access photos, contacts or the microphone.</p>
@@ -236,8 +259,10 @@ does not access photos, contacts or the microphone.</p>
 
 <h2>5. Notifications</h2>
 <p>If you allow notifications (the App asks first, then iOS shows its prompt), a notification token (Firebase Cloud
-Messaging) is created for your device and gift or announcement notifications may be sent. You can turn them off anytime
-under iOS <em>Settings → Bulmaca → Notifications</em>.</p>
+Messaging) is created for your device and gift or announcement notifications may be sent. The App also schedules a
+<strong>local reminder on your phone</strong> for evenings when you haven't played the daily puzzle; no data is sent to a
+server for this. You can turn notifications off anytime in the App's settings or under your phone's
+<em>Settings → Bulmaca → Notifications</em>.</p>
 
 <h2>6. Advertising (Google AdMob)</h2>
 <p>The App is free and shows ads through <strong>Google AdMob</strong> (Google LLC / Google Ireland Limited): optional
@@ -296,8 +321,8 @@ where required, your consent.</p>
   <li>Account and game data are kept until your account is deleted.</li>
   <li><strong>You can delete your account and all your data in the App:</strong> <em>Settings → Hesabım (My account) →
   Hesabı ve bütün verileri sil (Delete account and all data)</em>. This permanently deletes your cloud data, your account
-  and the data on your phone; if you used Sign in with Apple, the App's authorization with Apple is also revoked. This
-  cannot be undone.</li>
+  and the data on your phone, including your nickname, your leaderboard entry and your friends list; if you used Sign in
+  with Apple, the App's authorization with Apple is also revoked. This cannot be undone.</li>
   <li><strong>Guest accounts:</strong> deleting the App from your phone does not delete your cloud data. Use the button
   above first, or email us.</li>
   <li>Usage statistics and crash reports are kept for the periods above; advertising data according to Google's
