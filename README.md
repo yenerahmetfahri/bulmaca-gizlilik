@@ -1,4 +1,4 @@
-# Go On: Bulmaca ile İngilizce Öğren — Gizlilik Politikası
+# Çengelengi: Bulmaca ile İngilizce Öğren — Gizlilik Politikası
 
 https://yenerahmetfahri.github.io/bulmaca-gizlilik/
 
